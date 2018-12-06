@@ -40,6 +40,17 @@ class Comparison extends React.Component{
 		})
 		return(
 			<div className='body'>
+				<div className = 'titlePage'>
+					<div className='rightDecal'>
+						<img src = {require("./images/right.png")}/>
+					</div>
+					<div className='title'>
+						<img src = {require("./images/text.png")}/>
+					</div>
+					<div className='leftDecal'>
+						<img src = {require("./images/left.png")}/>
+					</div>
+				</div>
 				<span className = 'US'>
 					{usRows}
 				</span>
@@ -52,10 +63,10 @@ class Comparison extends React.Component{
 }
 
 const FOODS = [
-	{fromUS: true, image: "coffee.png", label: 'Coffee', description: 'This is coffee'},
-	{fromUS: false, image: "tea.png", label: 'Tea', description: 'This is tea'},
-	{fromUS: true, image: "waffle.png", label: 'Waffles', description: 'These are waffles'},
-	{fromUS: false, image: "crepe.png", label: 'Crepe', description: 'This is a crepe'},
+	{fromUS: true, image: "coffee.png", label: 'Coffee', description: 'Surveys from 2018 show that 64% of Americans drink coffee, but it only gained popularity among British colonists as a result of the Boston Tea Party in 1773.'},
+	{fromUS: false, image: "tea.png", label: 'Tea', description: 'Tea originated in Southwest China, where it was used for medicinal purposes. It became popular as a recreational drink during the Chinese Tang dynasty.'},
+	{fromUS: true, image: "waffle.png", label: 'Waffles', description: 'Dutch colonists brought Waffle making to America in the early 1600s but the word "waffle" did not appear until the 18th century.'},
+	{fromUS: false, image: "crepe.png", label: 'Jianbing', description: 'Jianbing is native to Northeast China one of the most popular street breakfasts in China. It is similar to crepes and literally translates to "fried pancake".'},
 	{fromUS: true, image: "burger.png", label: 'Burger', description: 'This is a burger'},
 	{fromUS: false, image: "dumpling.png", label: 'Dumplings', description: 'These are dumplings'},
 	{fromUS: true, image: "salad.png", label: 'Salad', description: 'This is a salad'},
