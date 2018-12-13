@@ -92,6 +92,9 @@ class Comparison extends React.Component{
 					<span className = 'China'>
 						{chinaRows}
 					</span>
+					<div id="wiki">
+						<a href = "http://creative.colorado.edu/~kewu0950/Wiki/"><img src = {require("./images/wiki.png")} alt="wiki"/></a>
+					</div>
 				</div>
 			);
 		}else{
@@ -116,7 +119,7 @@ class Comparison extends React.Component{
 							<img id='right' src = {require("./images/right.png")}/>
 						</div>
 						<div className='title'>
-							<img id='title' src = {require("./images/text.png")}/>
+							<img id='title' src = {require("./images/intro.png")}/>
 						</div>
 						<div className='leftDecal'>
 							<img id='left' src = {require("./images/left.png")}/>
@@ -135,14 +138,14 @@ const FOODS = [
 	{fromUS: false, image: "crepe.png", label: 'Jianbing', description: 'Jianbing is native to Northeast China and is one of the most popular street breakfasts in China. It is similar to crepes and literally translates to "fried pancake".'},
 	{fromUS: true, image: "burger.png", label: 'Hamburger', description: 'The word "hamburger" was derived from German Hamburg steaks and has since become a well-known symbol of American cuisine. Americans consume about 13 billion hamburgers each year.'},
 	{fromUS: false, image: "dumpling.png", label: 'Dumplings', description: 'Legend has it that Chinese stuffed dumplings were first invented by Zhang Zhongjian, during the Han Dynasty. He cooked them with healing herbs in an effort to relieve the people of his village from frostbite.'},
-	{fromUS: true, image: "salad.png", label: 'Salad', description: 'This is a salad'},
-	{fromUS: false, image: "noodles.png", label: 'Hot Dry Noodles', description: 'These are hot dry noodles'},
-	{fromUS: true, image: "pizza.png", label: 'Pizza', description: 'This is pizza'},
-	{fromUS: false, image: "duck.png", label: 'Beijing Duck', description: 'This is Beijing duck'},
-	{fromUS: true, image: "steak.png", label: 'Steak', description: 'This is steak'},
-	{fromUS: false, image: "hotpot.png", label: 'Hotpot', description: 'This is hotpot'},
-	{fromUS: true, image: "brownie.png", label: 'Brownies', description: 'These are brownies'},
-	{fromUS: false, image: "ricedumpling.png", label: 'Rice Dumpling', description: 'This is a rice dumpling'}
+	{fromUS: true, image: "salad.png", label: 'Salad', description: 'The word "salad" is derived from the Latin "sal", which means salt, since raw vegitables were dressed with salt in ancient times. In the 1920s, salad became popular enough to devote entire recipe books to it.'},
+	{fromUS: false, image: "noodles.png", label: 'Hot Dry Noodles', description: 'Hot dry noodles is a traditional dish in Central China. It only has a history in China of about 80 years and is unique because the noodles are not in soup, like most Asian noodle dishes.'},
+	{fromUS: true, image: "pizza.png", label: 'Pizza', description: 'The word "pizza" was first used in Italy in 997 AD and was brought to the U.S. by Italian immigrants in the 19th century. Pizza was mostly consumed by immigrants until WWII when American troops started advertising a greater appreciation for it.'},
+	{fromUS: false, image: "duck.png", label: 'Peking Duck', description: 'Peking duck dates back to the Yuan Dynasty and was one of the main dishes on the imperial court menus. As the duck became more popular among the upper class, it began inspiring poets and scholars.'},
+	{fromUS: true, image: "steak.png", label: 'Steak', description: 'Beef is consumed around the world, but it is cut and cooked differently in each place. The most popular cut in America is the Tomahawk Steak, followed closely by Filet Mignon.'},
+	{fromUS: false, image: "hotpot.png", label: 'Huo Guo', description: 'The English translation of Huo Guo is Hot Pot, which is a way of eating that people enjoy together. Folklore states that Emperor Qianlong loved it during the Qing Dynasty and often provided it at banquets.'},
+	{fromUS: true, image: "brownie.png", label: 'Brownies', description: 'The first use of the word "brownie" to describe a desert was in 1896 for a molasses cake recipe. Since then, it has been given to the baked chocolate desert, and has even appeared in calendars for National Brownie Day on December 8th.'},
+	{fromUS: false, image: "ricedumpling.png", label: 'Zongzi', description: 'Zongzi are rice dumplings that were created to commemorate a famous Chinese poet Qu Yuan. Legend has it that packs of rice were thrown into the river after Qu Yuan drowned himself in it, to prevent fish from eating his body.'}
 ];
 
 ReactDOM.render(

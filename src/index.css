@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: vtkschalk;
+  src: url("./fonts/vtkschalk.ttf");
+}
+
+@font-face{
+	font-family: chalkboard;
+	src: url("./fonts/Chalkboard.ttc");
+}
+
 html{
 	background-image:url("./images/bg.png");
 	background-position: center;
@@ -54,18 +65,21 @@ body {
 	justify-content: flex-end;
 	order: 1;
 }
+#left{
+	margin-top:73vh;
+}
 
-.foodItem{
+.body{
 	height: 100vh;
-	width: 49vw;
+}
+.foodItem{
+	/*height: 100vh;*/
+	width: 29vw;
 	align-content: center;
 	padding-top:15vh;
 	transition: transform 5s;
-	opacity: 0;
-}
-
-.fade{
-	opacity:1;
+	opacity: 1;
+	/*border-style: dashed;*/
 }
 
 code {
@@ -75,9 +89,11 @@ code {
 
 .US {
 	float:left;
+	padding-left: 20vw;
 }
 .China{
 	float: right;
+	padding-right: 20vw;
 }
 img{
 	max-height: 100%;
@@ -87,38 +103,49 @@ img{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+
 }
 
-#left{
-	margin-top: 73vh;
-}
 .imgContainer{
-	width: 365px;
-	height: 240px;
+/*	width: 365px;
+*/	height: 240px;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
 	align-content: center;
 	object-fit: contain;
+	/*border-style: dashed;*/
 }
 
 .lbl{
-	font-weight: bold;
+	font-family: vtkschalk;
+	/*font-weight: bold;*/
 	color: white;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	text-align: center;
 }
 .des{
+	font-family: chalkboard;
+	font-size:1.1em;
 	border: dashed 1px;
 	color:white;
 	margin-top: 5%;
 	word-wrap: normal;
-	width: 20vw;
+	width: 25vw;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
 	padding: 15px 15px 15px 15px;
+}
+
+/*Wikipedia*/
+#wiki {
+	display:block;
+    margin-left: 95%;
+    height: 5%;
+    margin-top:90vh;
+    position: fixed;
 }
 
 /*NAVIGATION DOTS (from https://codepen.io/-codes/pen/XjZgzQ)*/
@@ -128,17 +155,17 @@ img{
 }
 .dot {
 	display:inline-block;
-	width:10px; 
-	height:10px; 
+	width:15px; 
+	height:15px; 
 	background-color:rgba(255,255,255,.3); 
-	border-radius:10px; 
+	border-radius:15px; 
 	z-index:999; 
 	content:''; 
 	color:transparent; 
 	font-size:14px; 
 	line-height:10px; 
 	vertical-align:middle; 
-	margin:0 2.5% 0 2.5%; 
+	margin:0 0.5% 0 0.5%; 
 	font-weight:300;
 }
 .dot:hover {
